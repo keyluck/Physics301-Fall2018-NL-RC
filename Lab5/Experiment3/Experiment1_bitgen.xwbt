@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\fjord\Desktop\physics 301\lab5\Experiment1\Experiment1.ncd
+OUTFILE=C:\Users\fjord\Desktop\physics 301\lab5\Experiment1\Experiment1.bit
+FAMILY=Spartan3E
+PART=xc3s100e-4cp132
+WORKINGDIR=C:\Users\fjord\Desktop\physics 301\lab5\Experiment1
+LICENSE=WebPack
+USER_INFO=211595485_0_0_330

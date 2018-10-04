@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/fjord/Desktop/physics 301/lab5/Experiment2/Experiment2.xst" -ofn "C:/Users/fjord/Desktop/physics 301/lab5/Experiment2/Experiment2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Experiment1.ucf -p xc3s100e-cp132-4 "Experiment2.ngc" Experiment2.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Experiment2_map.ncd Experiment2.ngd Experiment2.pcf 
+par -w -intstyle ise -ol high -t 1 Experiment2_map.ncd Experiment2.ncd Experiment2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Experiment2.twx Experiment2.ncd -o Experiment2.twr Experiment2.pcf -ucf Experiment1.ucf 
+bitgen -intstyle ise -f Experiment2.ut Experiment2.ncd 
